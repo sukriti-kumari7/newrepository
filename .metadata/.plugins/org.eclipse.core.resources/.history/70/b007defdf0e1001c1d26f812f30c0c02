@@ -1,0 +1,17 @@
+package com.motivity;
+class Cources{
+	void enrole(String a) {
+		System.out.println("Java Course is enroled");
+	}
+	
+}
+
+public class Display {
+
+	public static void main(String[] args) {
+		Cources course = new Cources();
+		course.enrole("Java");
+
+	}
+
+}

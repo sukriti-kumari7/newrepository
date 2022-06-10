@@ -1,0 +1,37 @@
+package com.Mobile;
+
+class AppleBrand{
+	String newproject() {
+		return "Mobile";
+		class Discription{
+			void discription() {
+				
+			}
+		}
+		Discription explaination = new Discription();
+	}
+	class AppleIPhone{
+		String name() {
+			return "Apple Iphone";
+		}
+	}
+	class AppleFeature{
+		void features() {
+			System.out.println("It contains 64GB RAM and 128GB ROM");
+			System.out.println("Height is 150.9mm and Width is 75.7mm and weight is 194 grams.");
+			System.out.println("Display size is 6.1 inch.");
+			System.out.println("Dual 12MP Ultra Wide and Wide Cameras .");
+		}
+	}
+}
+
+public class MemberInnerClass {
+	public static void main(String[] args) {
+		AppleBrand launch = new AppleBrand();
+		System.out.println("Our new project is " + launch.newproject());
+		AppleBrand.AppleIPhone projectName = launch.new AppleIPhone();
+		System.out.println("Our new project is " + projectName.name());
+		AppleBrand.AppleFeature feture= launch.new AppleFeature();
+		feture.features();
+	}
+}

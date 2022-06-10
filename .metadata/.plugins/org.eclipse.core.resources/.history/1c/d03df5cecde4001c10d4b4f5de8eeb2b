@@ -1,0 +1,45 @@
+package com.Mobile;
+class Androied{
+	String brandName;
+	int price;
+	int romsize;
+	int ramsize;
+	float screensize;
+	int camerapixel;
+	String screeType;
+	
+	Androied(){
+		System.out.println("Grand features of My Phone. ");
+	}
+	Androied(String brandName){
+		this.brandName = brandName;
+		System.out.println("Brand name is " + brandName);
+	}
+	Androied(int price){
+		System.out.println("Price of Iphone is " + price);
+	}
+	Androied(int romsize, int ramsize){
+		this();
+		System.out.println("RAM size is " + ramsize + "ROM size is " + romsize);
+	}
+	Androied(float screensize){
+		System.out.println("Screen size is " + screensize);
+	}
+	Androied(int camerapixel,String screenType){
+		System.out.println( "Camera pixel is"+ camerapixel + "Screen type is " + screenType );
+	}
+}
+
+
+public class ConstructorOverloading {
+	
+	public static void main(String[] args) {
+		Androied apple = new Androied();
+		apple = new Androied("Apple");
+		apple = new Androied(69900);
+		apple = new Androied(16, 128);
+		apple = new Androied(6.5f);
+		apple = new Androied(50, "Touch Screen");
+	}
+
+}

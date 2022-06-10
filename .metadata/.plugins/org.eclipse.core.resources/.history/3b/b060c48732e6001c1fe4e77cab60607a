@@ -1,0 +1,27 @@
+package com.Mobile;
+
+//Arithmetic Exception
+class Exception{
+	int dividend;
+	int divisor;
+	
+	void add(){
+		try {
+			int quotient = dividend/divisor;
+			System.out.println(quotient);
+		}
+	
+		catch(ArithmeticException e) {
+			System.out.println("Zero cant be divisor give a valid divisor");
+		}
+	}
+	
+}
+
+public class ExceptionChecling {
+	public static void main(String[] args) {
+		Exception check = new Exception();
+		check.add();
+	}
+
+}

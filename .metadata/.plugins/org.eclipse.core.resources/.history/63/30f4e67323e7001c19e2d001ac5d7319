@@ -1,0 +1,52 @@
+package com.Mobile;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+import javax.swing.text.html.HTMLDocument.Iterator;
+
+public class ListProgram {
+
+	public static void main(String[] args) {
+		
+		// ArrayList
+		
+		List<Integer> list = new ArrayList<Integer>();
+		
+		list.add(0);
+		list.add(1);
+		list.add(2);
+		list.add(3);
+		list.add(4);
+		list.add(5);
+		list.add(6);
+		list.add(7);
+		list.add(7);
+		list.add(6);
+		list.add(0);
+		
+		System.out.println(list);
+		list.set(8,8);
+		list.set(9, 9);
+		System.out.println(list);
+		list.remove(10);
+		System.out.println(list);
+		
+		//LinkedList
+		
+		List<String> names = new LinkedList<String>();
+		
+		names.add("Ram");
+		names.add("Shyam");
+		names.add("Madan");
+		names.add("Mohan");
+		names.add("Rahul");
+		names.add("Priti");
+		
+		System.out.println(names);
+		
+		
+	}
+
+}

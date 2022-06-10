@@ -1,0 +1,36 @@
+package com.motivity;
+
+class Values{
+	void display() {
+		System.out.println("No Values");
+	}
+//	void display(int a) {
+		//System.out.println(a);
+	//}
+	//void display(float b) {
+		//System.out.println(b);
+	//}
+	//void display(double c) {
+	//	System.out.println(c);
+	//}
+	//void display(String d) {
+	//	System.out.println(d);
+	//}
+	
+}
+
+public class Overloading {
+
+	public static void main(String[] args) {
+		Values value = new Values();
+		value.display();
+	//	sre.display(10);
+//		sre.display(10.5f);
+//		double c = 1000.006;
+		//sre.display(100.002);
+		//String d = "Sukriti";
+		//sre.display("Sukriti");
+
+	}
+
+ }

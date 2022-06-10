@@ -1,0 +1,48 @@
+package com.motivity;
+
+import java.util.HashSet;
+
+public class CollectionPrograme {
+
+	public static void main(String[] args) {
+		
+	//storing Integer in Hash Set
+	HashSet<Integer> basket = new HashSet<>();
+	System.out.println("The value stored in HashSet is : ");
+	basket.add(100);
+	basket.add(29);
+	System.out.println(basket);
+	
+	//'addAll' adds the values of one HashSet into Another HashSet
+
+	System.out.println("The value stored in another HashSet is : ");
+	
+	HashSet<Integer> store = new HashSet<>();
+	store.add(5);
+	store.add(28);
+	store.add(97);
+	store.add(2800);
+	store.add(27889);
+	store.add(12356);
+	
+	System.out.println(store);
+	
+	System.out.println("Using addAll we can combine both HashSet values .");
+	
+	store.add(55);
+	
+	basket.addAll(store);
+	System.out.println(basket);
+	
+	//'contains' checks if the particular value is present in the HashSet or not.It returns boolean value
+	
+	System.out.println(basket.contains(5));
+	
+	}
+	
+	//'headSet'
+	
+	System.out.println(basket.contains(9));
+	
+
+}

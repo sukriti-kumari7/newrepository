@@ -1,0 +1,17 @@
+package music.string;
+
+import mugic.Playable;
+
+public class Veena implements Playable {
+	
+	public void play() {
+		System.out.println("Class Veena Implements Interface Playable ");
+	}
+
+	public static void main(String[] args) {
+		Veena played = new Veena();
+		played.play();
+
+	}
+
+}

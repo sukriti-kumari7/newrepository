@@ -1,0 +1,14 @@
+package com.automobile.twowheeler;
+
+public class test {
+
+	public static void main(String[] args) {
+		Hero feature = new Hero();
+		feature.getModelName();
+		System.out.println(feature.getRegistrationNumber());
+		feature.getownerName();
+		feature.getspeed();
+		feature.radio();
+	}
+
+}

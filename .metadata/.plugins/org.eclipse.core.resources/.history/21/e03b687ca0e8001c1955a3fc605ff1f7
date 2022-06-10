@@ -1,0 +1,16 @@
+package javaproject;
+
+public class Calculator {
+	static void powerInt(int numi, int num2) {}
+	
+	static double powerDouble(double numi, int num2) {
+		return Math.pow(numi, num2);
+	}
+
+	public static void main(String[] args) {
+		Calculator calculate = new Calculator();
+		System.out.println(calculate.powerDouble(2.2, 3));
+
+	}
+
+}

@@ -1,0 +1,97 @@
+package com.mobile;
+
+public interface Mymobile {
+	void brandName();
+	void screensize();
+	void memorysize();
+	void camerapixel();
+	void mediaplayer();
+}
+interface Earphone{
+	void earphoneType();
+	void earphoneBrand();
+}
+interface Charger{
+	void chargerType();
+}
+
+//Multiple Implementation
+
+abstract class Android implements Mymobile, Charger{
+	public void mediaplayer() {
+		System.out.println("Mediaplayer is available .");
+	}
+	
+	void  maps() {
+		System.out.println("Google Map is present in AndroidPhones to find exact Location.");
+	};
+	void colling() {
+		System.out.println("both key board and call history is present .");
+		}
+	void switchOnAndOf() {
+		System.out.println("Power buton is available for switch on and off .");
+	
+	}
+}
+
+//Inheritance and implements both together
+class Oppo extends Android implements Earphone{
+
+	@Override
+	public void screensize() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void memorysize() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public void switchOnAndOf() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void mediaplayer() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void camerapixel() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void brandName() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void earphoneType() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void earphoneBrand() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void chargerType() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}
+class MyBirthDayGift{
+	
+}

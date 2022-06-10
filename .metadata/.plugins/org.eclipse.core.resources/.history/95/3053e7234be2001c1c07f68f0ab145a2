@@ -1,0 +1,39 @@
+package com.mobile;
+//Single level inheritence
+class Mobile{
+	
+	void mediaPlayer() {
+		System.out.println("It has Media player");
+	}
+	void screen() {}
+	void callingSystem() {
+		System.out.println("It has number Keyboard to call any person");
+		System.out.println("It has option to save number to call any person with name.");
+	}
+	void camera() {}
+}
+class Motorola extends Mobile {
+	void brand() {
+		System.out.println("Motorola");
+	}
+	void screen() {
+		System.out.println("It's Screen size is 4.5 inch.");
+	}
+	void camera() {
+		System.out.println("Camera is of 48 mp.");
+	}
+}
+
+public class Inherit {
+
+	public static void main(String[] args) {
+		Motorola features = new Motorola();
+		 features.brand();
+		 features.mediaPlayer();
+		 features.screen();
+		 features.callingSystem();
+		 features.camera();
+		 
+	}
+
+}

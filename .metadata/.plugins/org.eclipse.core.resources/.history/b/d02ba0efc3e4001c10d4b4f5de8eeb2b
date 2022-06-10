@@ -1,0 +1,38 @@
+package com.Mobile;
+class Androied{
+	String brandName;
+	int price;
+	int romsize;
+	int ramsize;
+	float screensize;
+	int camerapixel;
+	String name;
+	
+	Androied(){
+		System.out.println("Grand features of Apple. ");
+	}
+	Androied(String brandName){
+		System.out.println("Grand features of Apple. ");
+	}
+	Androied(int Price){
+		System.out.println("Grand features of Apple. ");
+	}
+	Androied(int romsize, int ramsize){
+		System.out.println("Grand features of Apple. ");
+	}
+	Androied(float screensize){
+		System.out.println("Grand features of Apple. ");
+	}
+	Androied(int camerapixel,String name){
+		System.out.println("Grand features of Apple. ");
+	}
+}
+
+public class ConstructorOverloading {
+	
+	public static void main(String[] args) {
+		Androied apple = new Androied();
+
+	}
+
+}

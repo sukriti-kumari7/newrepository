@@ -1,0 +1,20 @@
+package com.Mobile;
+
+//Arithmetic Exception
+class Exception{
+	int dividend;
+	int divisor;
+	void add(){
+		int quotient = dividend/divisor;
+		System.out.println(quotient);
+	}
+	
+}
+
+public class ExceptionChecling {
+	public static void main(String[] args) {
+		Exception check = new Exception();
+		check.add();
+	}
+
+}

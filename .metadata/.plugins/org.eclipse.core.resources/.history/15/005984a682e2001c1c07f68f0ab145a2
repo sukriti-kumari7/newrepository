@@ -1,0 +1,26 @@
+package com.mobile;
+
+abstract class Obj{
+	  static void screenSize();
+	 
+	 
+	 
+	 
+	 //static is an property of class  so we can't give the static key word to abstract method
+	 
+}
+class Feature extends Obj{
+	void screenSize(){
+		System.out.println("Mobile size is 4.5 inches");
+	}
+}
+
+public class AbstractMethod {
+
+	public static void main(String[] args) {
+		Feature f = new Feature();
+		f.screenSize();
+		
+	}
+
+}

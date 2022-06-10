@@ -1,0 +1,18 @@
+package com.Mobile;
+
+//Arithmetic Exception
+class Exception{
+	int a;
+	int b;
+	void add(){
+		int c = a/b;
+	}
+	
+}
+
+public class ExceptionChecling {
+	public static void main(String[] args) {
+		
+	}
+
+}

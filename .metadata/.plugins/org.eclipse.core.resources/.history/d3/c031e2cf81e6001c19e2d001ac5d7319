@@ -1,0 +1,14 @@
+package com.motivity;
+
+import java.util.HashSet;
+
+public class CollectionPrograme {
+
+	public static void main(String[] args) {
+	HashSet<Integer> basket = new HashSet<>();
+	basket.add(100);
+	System.out.println(basket);
+
+	}
+
+}

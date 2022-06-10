@@ -1,0 +1,17 @@
+package com.Mobile;
+
+class AppleBrand{
+	String newproject() {
+		return "Mobile";
+	}
+	class AppleIPhone{
+		
+	}
+}
+
+public class MemberInnerClass {
+	public static void main(String[] args) {
+		AppleBrand launch = new AppleBrand();
+		System.out.println(launch.newproject());
+	}
+}

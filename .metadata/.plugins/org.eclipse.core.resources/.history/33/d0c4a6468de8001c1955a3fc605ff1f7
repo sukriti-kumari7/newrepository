@@ -1,0 +1,17 @@
+package music.wind;
+
+import mugic.Playable;
+
+public class Saxaphone implements Playable { 
+	
+	public void play() {
+	
+		System.out.println("Play Saxaphone. ");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

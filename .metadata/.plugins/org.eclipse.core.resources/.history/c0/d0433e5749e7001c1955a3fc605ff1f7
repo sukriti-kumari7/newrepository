@@ -1,0 +1,50 @@
+package javaproject;
+
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Set;
+
+public class MapProgram {
+
+	public static void main(String[] args) {
+		
+		Map<Integer,String> myMap = new HashMap<Integer,String>();		
+		
+		myMap.put(1,"Aprajita");
+		myMap.put(2,"Anjali");
+		myMap.put(3,"Aman");
+		myMap.put(4,"Aaloc");
+		myMap.put(5,"Aaditya");
+		myMap.put(6,"Aparna");
+		
+		System.out.println(myMap);
+		
+		System.out.println(myMap.get(5));
+		
+		Set<Integer> set = myMap.keySet();
+		
+		System.out.println(set);
+		
+		Collection<String> values = myMap.values();
+		
+		System.out.println(values);
+		
+		System.out.println(myMap.containsKey(4));
+		System.out.println(myMap.containsKey(8));
+		
+		Map<Integer,Integer> mymap = new LinkedHashMap<Integer,Integer>();
+		
+		mymap.put(1,101);
+		mymap.put(2,102);
+		mymap.put(3,103);
+		mymap.put(4,104);
+		mymap.put(5,105);
+		mymap.put(6,106);
+		
+		System.out.println(mymap);
+		
+	}
+
+}

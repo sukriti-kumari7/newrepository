@@ -1,0 +1,38 @@
+package com.Mobile;
+class Androied{
+	String brandName;
+	int price;
+	int romsize;
+	int ramsize;
+	float screensize;
+	int camerapixel;
+	String name;
+	
+	Androied(){
+		
+	}
+	Androied(String brandName){
+		
+	}
+	Androied(int Price){
+		
+	}
+	Androied(int romsize, int ramsize){
+		
+	}
+	Androied(float screensize){
+		
+	}
+	Androied(int camerapixel,String name){
+		
+	}
+}
+
+public class ConstructorOverloading {
+	
+	public static void main(String[] args) {
+		Androied apple = new Androied();
+
+	}
+
+}

@@ -1,0 +1,111 @@
+package com.mobile;
+
+interface Mymobile {
+	void brandName();
+	void screensize();
+	void memorysize();
+	void camerapixel();
+	void mediaplayer();
+}
+interface Earphone{
+	void earphoneType();
+	void earphoneBrand();
+}
+interface Charger{
+	void chargerType();
+}
+
+//Multiple Implementation
+
+abstract class Android implements Mymobile, Charger{
+	public abstract void mediaplayer();
+	
+	void  maps() {
+		System.out.println("Google Map is present in AndroidPhones to find exact Location.");
+	}
+	void colling() {
+		System.out.println("both key board and call history is present .");
+		}
+	void switchOnAndOf() {
+		System.out.println("Power buton is available for switch on and off .");
+	
+	}
+}
+
+//Inheritance and implements both together
+
+class Oppo extends Android implements Earphone{
+
+	@Override
+	public void screensize() {
+		System.out.println("Screensize is 5 inch .");
+		
+	}
+
+	@Override
+	public void memorysize() {
+		System.out.println("memory size is 64 Gb .");
+		
+	}
+
+
+	@Override
+	public void switchOnAndOf() {
+		System.out.println("");
+		
+	}
+	@Override
+	public void mediaplayer() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void camerapixel() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public  void brandName() {
+		System.out.println("Oppo");
+		
+	}
+
+	@Override
+	public void earphoneType() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void earphoneBrand() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void chargerType() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}
+public class BuyMobile {
+
+	public static void main(String[] args) {
+		Oppo feature = new Oppo();
+		feature.brandName();
+		feature.screensize();
+		feature. memorysize();
+		feature.camerapixel();
+		feature.mediaplayer();
+		feature.earphoneType();
+		feature.earphoneBrand();
+		feature.chargerType();
+		feature.maps() ;
+		feature.colling();
+		feature.switchOnAndOf();
+	}
+
+}

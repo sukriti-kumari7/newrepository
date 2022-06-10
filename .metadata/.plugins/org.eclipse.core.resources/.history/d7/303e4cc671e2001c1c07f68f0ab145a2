@@ -1,0 +1,19 @@
+package com.mobile;
+
+abstract class Mobile{
+	 abstract void screenSize(); 
+}
+class Feature extends Mobile{
+	void screenSize(){
+		System.out.println("Mobile size is 4.5 inches");
+	}
+}
+
+public class AbstractMethod {
+
+	public static void main(String[] args) {
+		Feature f = new Feature();
+		f.screenSize();
+	}
+
+}

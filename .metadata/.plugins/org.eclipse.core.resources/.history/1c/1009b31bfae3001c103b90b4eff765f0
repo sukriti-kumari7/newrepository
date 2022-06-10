@@ -1,0 +1,10 @@
+package com.mobile;
+
+public class BuyMobile {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

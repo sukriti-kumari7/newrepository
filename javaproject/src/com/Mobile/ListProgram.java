@@ -3,6 +3,7 @@ package com.Mobile;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.ListIterator;
 import java.util.Vector;
 
 import javax.swing.text.html.HTMLDocument.Iterator;
@@ -27,14 +28,25 @@ public class ListProgram {
 		list.add(6);
 		list.add(0);
 		
-		System.out.println(list);
+		ListIterator<Integer> ls = list.listIterator();
+		while(ls.hasNext()) {
+		System.out.println(ls.next());
+		}
 		
 		list.set(8,8);
 		list.set(9, 9);
 		list.set(10,10);
-		System.out.println(list);
+		
+		 ls = list.listIterator();
+		while(ls.hasNext()) {
+			System.out.println(ls.next());
+			}
+		
 		list.remove(10);
-		System.out.println(list);
+		 ls = list.listIterator();
+			while(ls.hasPrevious()) {
+				System.out.println(ls.previous());
+				}
 		
 		//LinkedList
 		
@@ -47,7 +59,11 @@ public class ListProgram {
 		names.add("Rahul");
 		names.add("Priti");
 		
-		System.out.println(names);
+		ListIterator<String>st = names.listIterator();
+		
+		while(st.hasNext()) {
+		System.out.println(st.next());
+		}
 		
 		//Vector
 		
@@ -61,8 +77,12 @@ public class ListProgram {
 		
 		show.set(1, 3.2f);
 		
+		ListIterator<Float>ft = show.listIterator();
 		
-		System.out.println(show);
+		while(ft.hasNext()) {
+		System.out.println(ft.next());
+		}
+	
 		
 	}
 

@@ -1,7 +1,10 @@
 package com.motivity;
 
+
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.TreeSet;
+
 
 public class CollectionPrograme {
 
@@ -44,9 +47,14 @@ public class CollectionPrograme {
 	
 	//By using 'addAll' we can combine the values of one HashSet into Another HashSet
 	
+	System.out.println("By combining both the Hashset the Set is : ");
 	basket.addAll(store);
-	System.out.println(basket);
 	
+	Iterator<Integer> i = basket.iterator();
+	
+	while(i.hasNext()) {
+	System.out.println(i.next());
+	}
 	//'contains' checks if the particular value is present in the HashSet or not.It returns boolean value
 	
 	System.out.println(basket.contains(5));
